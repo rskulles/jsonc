@@ -21,7 +21,7 @@ It is a JSON parser written in C(99). It has very minimal functionality right no
 - Arrays
   - Probably going to have to start with arrays of a single data type and work from there to support arrays where the values are all different types (legal JSON).
 - Documentation 
-  - You can look at `jsonc.h` to get an overview of the data types. Nothing is documented though. 
+  - You can look at `json.h` to get an overview of the data types. Nothing is documented though. 
 
 ## Requirements
 
@@ -32,7 +32,7 @@ It is a JSON parser written in C(99). It has very minimal functionality right no
 
 `cd <source_directory>; mkdir build; cd build; cmake .. ;cmake --build .;`
 
-This will build the test application and jsonc as a library. You can literally rip out the files from `src` and  `include` and slap them in your project. Just make sure `jsonc.h` is in your include path, or change the `#include<jsonc.h>` in `jsonc.c` accordingly. 
+This will build the test application and jsonc as a library. You can literally rip out the files from `src` and  `include` and slap them in your project. Just make sure `json.h` is in your include path, or change the `#include<json.h>` in `json.c` accordingly. 
 
 ## Contributing
 
