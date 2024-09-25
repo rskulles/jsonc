@@ -6,6 +6,9 @@
 #include<string.h>
 #include<stdlib.h>
 
+#ifdef _cplusplus
+extern "C" {
+#endif
 #define JSON_OBJECT_START                  '{'
 #define JSON_OBJECT_END                    '}'
 #define JSON_ARRAY_START                   '['
@@ -18,6 +21,7 @@
 #define JSON_WHITESPACE_CARRIAGE_RETURN    '\x0D'
 #define JSON_WHITESPACE_TAB                '\x09'
 #define JSON_STRING_ESCAPE_CHARACTER       '\\'
+
 
 size_t json_string_read_pos;
 
@@ -240,3 +244,6 @@ struct JSON_Object *JSON_Parse(const char *str, const size_t len) {
     struct JSON_Object *root = JSON_Parse_Object(str, len);
     return root;
 }
+#ifdef _cplusplus
+}
+#endif

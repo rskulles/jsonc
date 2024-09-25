@@ -4,6 +4,9 @@
 #include<stdlib.h>
 #include<locale.h>
 
+#ifdef _cplusplus
+extern "C"
+#endif
 int main(void) {
     setlocale(LC_ALL,"");
     const char *json = "{\"name\" : \"John Smith\", \"age\" : 69, \"inner\" : { \"inner_name\" : \"inner John Smith\", \"inner_age\" : 420}}";
