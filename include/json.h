@@ -4,6 +4,7 @@
 
 #ifndef JSON_H
 #define JSON_H
+#include <stddef.h>
 
 enum JSON_ValueType {
     NUMBER,
@@ -38,11 +39,11 @@ struct JSON_Member {
 };
 
 struct JSON_Object {
-    struct JSON_Member *members;
     unsigned int size ;
+    struct JSON_Member* members;
 };
 
-struct JSON_Object* JSON_Parse(const char *str, unsigned int len);
-void  JSON_Print(const struct JSON_Object * object);
+struct JSON_Object* JSON_Parse(const char *str, size_t len);
+void  JSON_Print(const struct JSON_Object * object, size_t pad);
 
 #endif //JSON_H
