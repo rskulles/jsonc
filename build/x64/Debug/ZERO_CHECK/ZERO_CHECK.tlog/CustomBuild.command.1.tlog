@@ -1,0 +1,10 @@
+^C:\DEV\PROJECTS\JSONC\BUILD\CMAKEFILES\2EE9EA528AE80EB2B3061548275C6EFD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dev/Projects/jsonc -BC:/Dev/Projects/jsonc/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Dev/Projects/jsonc/build/jsonc_test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

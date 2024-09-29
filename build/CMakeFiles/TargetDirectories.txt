@@ -1,0 +1,4 @@
+C:/Dev/Projects/jsonc/build/CMakeFiles/jsonc.dir
+C:/Dev/Projects/jsonc/build/CMakeFiles/test_app.dir
+C:/Dev/Projects/jsonc/build/CMakeFiles/ALL_BUILD.dir
+C:/Dev/Projects/jsonc/build/CMakeFiles/ZERO_CHECK.dir
